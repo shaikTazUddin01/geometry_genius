@@ -22,21 +22,21 @@
                 <figure class="h-[200px] p-5"><img src="./images/triangle.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                   <div class="text-center">
-                    <h2 class="text-xl font-bold">Triangle</h2>
-                    <p>Area(A) = 0.5 x b x h</p>
-                   </div>
-                   <div class="text-center flex justify-center gap-5">
-                   <div>
-                    <input type="number" placeholder="b" class="pl-2 w-[60px]" >cm
-                   </div>
-                    <div>
-                        <input type="number" placeholder="h" class="pl-2 w-[60px]">cm
+                    <div class="text-center">
+                        <h2 class="text-xl font-bold">Triangle</h2>
+                        <p>Area(A) = 0.5 x b x h</p>
                     </div>
-                   </div>
+                    <div class="text-center flex justify-center gap-5">
+                        <div>
+                            <input required type="number" placeholder="b" class="pl-2 w-[60px]" id="triangleBase">cm
+                        </div>
+                        <div>
+                            <input required type="number" placeholder="h" class="pl-2 w-[60px]" id="triangleheight">cm
+                        </div>
+                    </div>
                     <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                        <button class="btn btn-primary w-full" onclick="calculateTriangle()">Calculate</button>
+                    </div>
                 </div>
             </div>
             <!-- card 2 -->
@@ -44,21 +44,21 @@
                 <figure class="h-[200px] p-5"><img src="./images/rectangle.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                   <div class="text-center">
-                    <h2 class="text-xl font-bold">Rectangle</h2>
-                    <p>Area(A) = W x l</p>
-                   </div>
-                   <div class="text-center flex justify-center gap-5">
-                    <div>
-                     <input type="number" placeholder="w" class="pl-2 w-[60px]" >cm
+                    <div class="text-center">
+                        <h2 class="text-xl font-bold">Rectangle</h2>
+                        <p>Area(A) = W x l</p>
                     </div>
-                     <div>
-                         <input type="number" placeholder="l" class="pl-2 w-[60px]">cm
-                     </div>
+                    <div class="text-center flex justify-center gap-5">
+                        <div>
+                            <input required type="number" placeholder="w" class="pl-2 w-[60px]" id="rectangleWidth">cm
+                        </div>
+                        <div>
+                            <input required type="number" placeholder="l" class="pl-2 w-[60px]" id="rectangleLength">cm
+                        </div>
                     </div>
                     <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                        <button class="btn btn-primary w-full" onclick="calculateRectangle()">Calculate</button>
+                    </div>
                 </div>
             </div>
             <!-- card 3 -->
@@ -66,21 +66,21 @@
                 <figure class="h-[200px] p-5"><img src="./images/parallelogram.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                   <div class="text-center">
-                    <h2 class="text-xl font-bold">Parallelogram</h2>
-                    <p>Area(A) = b x h</p>
-                   </div>
-                   <div class="text-center flex justify-center gap-5">
-                    <div>
-                     <input type="number" placeholder="b" class="pl-2 w-[60px]" >cm
+                    <div class="text-center">
+                        <h2 class="text-xl font-bold">Parallelogram</h2>
+                        <p>Area(A) = b x h</p>
                     </div>
-                     <div>
-                         <input type="number" placeholder="h" class="pl-2 w-[60px]">cm
-                     </div>
+                    <div class="text-center flex justify-center gap-5">
+                        <div>
+                            <input required type="number" placeholder="b" class="pl-2 w-[60px]">cm
+                        </div>
+                        <div>
+                            <input required type="number" placeholder="h" class="pl-2 w-[60px]">cm
+                        </div>
                     </div>
                     <div class="card-actions justify-center ">
                         <button class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                    </div>
                 </div>
             </div>
             <!-- card 4 -->
@@ -88,21 +88,21 @@
                 <figure class="h-[200px] p-5"><img src="./images/rhombus.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                   <div class="text-center">
-                    <h2 class="text-xl font-bold">Rhombus</h2>
-                    <p>Area(A) = 0.5 x d1 x d2</p>
-                   </div>
-                   <div class="text-center flex justify-center gap-5">
-                    <div>
-                     <input type="number" placeholder="d1" class="pl-2 w-[60px]" >cm
+                    <div class="text-center">
+                        <h2 class="text-xl font-bold">Rhombus</h2>
+                        <p>Area(A) = 0.5 x d1 x d2</p>
                     </div>
-                     <div>
-                         <input type="number" placeholder="d2" class="pl-2 w-[60px]">cm
-                     </div>
+                    <div class="text-center flex justify-center gap-5">
+                        <div>
+                            <input required type="number" placeholder="d1" class="pl-2 w-[60px]">cm
+                        </div>
+                        <div>
+                            <input required type="number" placeholder="d2" class="pl-2 w-[60px]">cm
+                        </div>
                     </div>
                     <div class="card-actions justify-center ">
                         <button class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                    </div>
                 </div>
             </div>
             <!-- card 5 -->
@@ -110,21 +110,21 @@
                 <figure class="h-[200px] p-5"><img src="./images/pentagon.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                   <div class="text-center">
-                    <h2 class="text-xl font-bold">Pentagon</h2>
-                    <p>Area(A) = 0.5 x b x h</p>
-                   </div>
-                   <div class="text-center flex justify-center gap-5">
-                    <div>
-                     <input type="number" placeholder="b" class="pl-2 w-[60px]" >cm
+                    <div class="text-center">
+                        <h2 class="text-xl font-bold">Pentagon</h2>
+                        <p>Area(A) = 0.5 x b x h</p>
                     </div>
-                     <div>
-                         <input type="number" placeholder="h" class="pl-2 w-[60px]">cm
-                     </div>
+                    <div class="text-center flex justify-center gap-5">
+                        <div>
+                            <input required type="number" placeholder="b" class="pl-2 w-[60px]">cm
+                        </div>
+                        <div>
+                            <input required type="number" placeholder="h" class="pl-2 w-[60px]">cm
+                        </div>
                     </div>
                     <div class="card-actions justify-center ">
                         <button class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                    </div>
                 </div>
             </div>
             <!-- card 6 -->
@@ -132,29 +132,35 @@
                 <figure class="h-[200px] p-5"><img src="./images/ellipse.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                   <div class="text-center">
-                    <h2 class="text-xl font-bold">Ellipse</h2>
-                    <p>Area(A) = 0.5 x b x h</p>
-                   </div>
-                   <div class="text-center flex justify-center gap-5">
-                    <div>
-                     <input type="number" placeholder="b" class="pl-2 w-[60px]" >cm
+                    <div class="text-center">
+                        <h2 class="text-xl font-bold">Ellipse</h2>
+                        <p>Area(A) = 0.5 x b x h</p>
                     </div>
-                     <div>
-                         <input type="number" placeholder="h" class="pl-2 w-[60px]">cm
-                     </div>
+                    <div class="text-center flex justify-center gap-5">
+                        <div>
+                            <input required type="number" placeholder="b" class="pl-2 w-[60px]">cm
+                        </div>
+                        <div>
+                            <input required type="number" placeholder="h" class="pl-2 w-[60px]">cm
+                        </div>
                     </div>
                     <div class="card-actions justify-center">
                         <button class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- calculate area -->
         <div class="w-[437px] border border-black p-5 rounded-xl">
             <h1 class="text-2xl font-semibold text-center underline">Area Calculation</h1>
+
+            <ul id="addedArea">
+            </ul>
         </div>
     </div>
+
+    <!-- connected js file -->
+    <script src="./calculate.js"></script>
 </body>
 
 </html>
